@@ -1,9 +1,15 @@
 fun main()
 {
-    Task0()
-    Task1()
-    Task2()
+
 }
+
+fun Kostya()
+{
+
+    print("Я сделяль")
+}
+
+
 
 fun Task0()
 {
