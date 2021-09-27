@@ -6,4 +6,5 @@ fun main()
 fun Task0()
 {
     print("Hello World!")
+
 }
