@@ -1,9 +1,9 @@
 fun main()
 {
-    Task1()
+    Task0()
 }
 
-fun Task1()
+fun Task0()
 {
     print("Hello World!")
 }
