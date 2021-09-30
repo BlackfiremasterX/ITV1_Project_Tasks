@@ -1,4 +1,5 @@
 import java.util.*
+import kotlin.math.sqrt
 
 fun main() {
 
@@ -18,6 +19,9 @@ fun main() {
             "b4" -> Begin4()
 
             "b7" -> Begin7()
+
+            "b9" -> Begin9()
+
             else -> print("Такой задачи в списке нет!")
         }
         run = true
@@ -105,6 +109,19 @@ println("Найти длину окружности L и площадь круг
     println("L = $l")
     println("S = $s")
 
+
+}
+
+fun Begin9() {
+
+    println("\n\nBegin9.  Даны два неотрицательных числа a и b. Найти их среднее геометрическое, то есть квадратный корень из их произведения: √\n" +
+            "a·b.")
+    print("Введите a: ")
+    print("Введите b: ")
+    var a = 3
+    var b = 9.0
+    var SQRT = sqrt(b)
+    println("Корень квадратный из $b = $SQRT")
 
 }
 
