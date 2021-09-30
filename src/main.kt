@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main() {
 
     Info()
@@ -12,8 +14,8 @@ fun main() {
         user_answer = readLine().toString().toLowerCase()
         when (user_answer) {
             "b1" -> Begin1()
-            "b2" -> Begin2()
 
+            "b7" -> Begin7()
             else -> print("Такой задачи в списке нет!")
         }
         run = true
@@ -72,8 +74,17 @@ fun Begin1() {
     print("Периметр квадрата со стороной а = $a: $P")
 
 }
-fun Begin2()
+fun Begin7()
 {
+println("Найти длину окружности L и площадь круга S заданного радиуса R:\n" +
+        "L = 2·π·R, S = π·R^2")
+
+
+    val r: Double = Scanner(System.`in`).nextDouble()
+    val l = 2 * 3.14 * r
+    val s = 3.14 * r * r
+    println("L = $l")
+    println("S = $s")
 
 
 }
