@@ -22,6 +22,7 @@ fun main() {
             "if6" -> if6()
             "if7" -> if7()
             "if8" -> if8()
+            "if11" -> if11()
             else -> print("Такой задачи в списке нет!")
         }
         run = true
@@ -241,5 +242,29 @@ fun if8() {
         println("большее число $b")
         println("меньшее число $a")
     }
+
+}
+
+fun if11() {
+
+    println("Введите первое число ")
+    var a = readLine()!!.toDouble()
+    println("Введите второе число ")
+    var b = readLine()!!.toDouble()
+
+
+    if (a == b) {
+        a = 0.0
+        b = 0.0
+    } else {
+        if (a > b) {
+            b = a
+        } else {
+            a = b
+        }
+
+    }
+
+    print("A =$a  \n B =$b ")
 
 }
