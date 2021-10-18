@@ -2,7 +2,7 @@ import java.util.*
 import kotlin.math.sqrt
 
 fun main() {
-  Case3()
+    Case3()
 }
 
 fun Task_Operator() {
@@ -318,8 +318,7 @@ fun If28_29_30() {
             } else {
                 if (test_number / 10 != 0)
                     string = string + "двухзначное "
-                else
-                {
+                else {
                     string = string + "однозначное "
                 }
             }
@@ -336,14 +335,12 @@ fun If28_29_30() {
 
 }
 
-fun Case3()
-{
+fun Case3() {
     print("Case3. Дан номер месяца — целое число в диапазоне 1–12 (1 — январь, 2 — февраль и т. д.).\n" +
             " Вывести название соответствующего времени года («зима»,«весна», «лето», «осень»).\n")
     var month = readLine()!!.toInt()
 
-    when(month)
-    {
+    when (month) {
         in 1..2 -> println("Зима")
         in 3..5 -> println("Весна")
         in 6..8 -> println("Лето")
@@ -351,12 +348,26 @@ fun Case3()
         12 -> println("Зима. Декабрь")
         else -> print("Введите верное значение!")
     }
+}
 
+fun Case5() {
+    print("Тупо калькулятор!\n")
+    print("Выберите операцию(\n" +
+            "1 - сложение\n" +
+            "2 - вычитание\n" +
+            "3 - деление\n" +
+            "4 - умножение)\n" +
+            "Выбирай уже! ... : ")
+    var operation = readLine()!!.toInt()
+    print("Введи первое число:")
+    var num1 = readLine()!!.toDouble()
+    print("Введи второе число:")
+    var num2 = readLine()!!.toDouble()
 
+    when (operation) {
+        1 -> println("Результат сложения: ${num1+num2}}")
+        2 -> println("Результат вычитания: ${num1-num2}}")
 
-
-
-
-
-
+        else -> print("Введите верное значение!")
+    }
 }
